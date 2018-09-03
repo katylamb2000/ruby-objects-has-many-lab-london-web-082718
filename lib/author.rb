@@ -21,7 +21,7 @@ class Author
   
   def posts
     posts = []
-    posts << author.name
+    posts << Author.self
     Posts.all.select { |post| post.author == self}
   end
   
