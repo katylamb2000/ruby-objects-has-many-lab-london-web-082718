@@ -24,8 +24,6 @@ class Author
   
   def posts
     @posts = []
-    @posts << post
-    @@all << post
     post.author = self
     @posts
 #     @songs << song
