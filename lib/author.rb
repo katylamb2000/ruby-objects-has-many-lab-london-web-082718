@@ -19,15 +19,15 @@ class Author
     @name
   end
   
-#   @songs << song
-# song.artist = self
-  
-  def posts (post)
-    @posts = []
-    post.author = self
+  def posts
     @posts
-#     @songs << song
-# song.artist = self
+  end
+   
+    post.author = self
+   
+   
+    @posts
+
     
     # posts << Author.self
     # Posts.all.select { |post| post.author == self}
