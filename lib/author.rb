@@ -34,10 +34,10 @@ class Author
     @@all << title
 end
   
-  song = Song.new(name)
-    @songs << song
-    @@all << name
-    song.artist = self
+  # song = Song.new(name)
+  #   @songs << song
+  #   @@all << name
+  #   song.artist = self
   
   def self.post_count
     Post.all.count
