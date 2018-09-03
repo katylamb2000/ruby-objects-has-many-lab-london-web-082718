@@ -2,7 +2,7 @@ class Author
   
   @@all = []
   
-  @@Posts =  []
+  
   
   attr_accessor :name, :post
   
@@ -19,8 +19,14 @@ class Author
     @name
   end
   
+#   @songs << song
+# song.artist = self
+  
   def posts
-    posts = []
+    
+#     @songs << song
+# song.artist = self
+#     posts = []
     posts << Author.self
     Posts.all.select { |post| post.author == self}
   end
