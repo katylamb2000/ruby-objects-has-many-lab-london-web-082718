@@ -23,12 +23,13 @@ class Author
 # song.artist = self
   
   def posts
+    @posts = []
     @posts << post
     @@all << post
     post.Author = self
 #     @songs << song
 # song.artist = self
-    # posts = []
+    
     # posts << Author.self
     # Posts.all.select { |post| post.author == self}
   end
