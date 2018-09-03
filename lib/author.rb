@@ -27,6 +27,7 @@ class Author
     @posts << post
     @@all << post
     post.Author = self
+    @posts
 #     @songs << song
 # song.artist = self
     
