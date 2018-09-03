@@ -30,9 +30,14 @@ class Author
   def add_post_by_title (title)
     post = Post.new (title)
     post.author = self
-    @posts << self
+    @posts << title
+    @@all << title
 end
   
+  song = Song.new(name)
+    @songs << song
+    @@all << name
+    song.artist = self
   
   def self.post_count
     Post.all.count
