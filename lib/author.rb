@@ -26,7 +26,7 @@ class Author
     
 #     @songs << song
 # song.artist = self
-#     posts = []
+     posts = []
     posts << Author.self
     Posts.all.select { |post| post.author == self}
   end
