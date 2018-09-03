@@ -22,7 +22,7 @@ class Author
 #   @songs << song
 # song.artist = self
   
-  def posts
+  def posts (post)
     @posts = []
     post.author = self
     @posts
